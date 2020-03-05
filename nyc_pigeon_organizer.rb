@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
  if !pigeon_nyc_hash[name][key]
    pigeon_nyc_hash[name][key] = []
 end
-
+pigeon_nyc_hash[name][key] << stats.to_s
 
   end
   
