@@ -4,10 +4,10 @@ def nyc_pigeon_organizer(data)
    value.each do |new_value, names|
   
  names.each do |name|
-   if pigeon_nyc_hash[name] 
+   if !pigeon_nyc_hash[name] 
      pigeon_nyc_hash[name] = {}
   end
- if pigeon_nyc_hash[name][key]
+ if !pigeon_nyc_hash[name][key]
    pigeon_nyc_hash[name][key] = []
 end
 pigeon_nyc_hash[name][key] << new_value.to_s
